@@ -13,6 +13,7 @@ A static application which is purely HTML and JS without a Node js server hosted
 It uses rhino3Dm and Javascriptto build an HTML webpage for sketching geometry.
 It sketches different kinds of Rhino Geometry and helps you download the Rhino3d file 
 
+This application is optimized for desktop experience only and is currently in development for mobile experience
 
 ### USAGE :
 
