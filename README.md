@@ -1,6 +1,6 @@
-# 2Dsketcherhino3DMApp
+# 2DNURBSketcherApp
 
-_author_  = "Abhishek Shinde"
+_edited_by_  = "Abhishek Shinde"
 _original_author_ = "Andy Payne@McNeel"
 _license_ = "Apache License"
 _copyright_ = "exDAS | Robert McNeel & Associates"
