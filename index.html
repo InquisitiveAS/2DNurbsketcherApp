@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rhino3dm: 2D NURBS Sketcher Static App </title>
+<meta name="description" content="A static web app developed by exDAS(Abhishek Shinde)" />
+  <link rel="icon" href="data:;base64,=">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fafafa;
+    }
+    #description {
+      text-align: center;
+      padding: 1rem;
+      background: #fff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    #description h1 {
+      margin: 0.5rem 0;
+    }
+    canvas {
+      display: block;
+      margin: 1rem auto;
+      border: 1px solid #ccc;
+      background: #eee;
+    }
+    #buttons {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    button {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+    }
+    kbd {
+      background: #eee;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 0 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="description">
+    <h1>2D NURBS Curve Sketcher</h1>
+    <p>Click on the canvas to place NURBS control points, then press <kbd>Enter</kbd> to finalize.</p>
+    <p>
+      <strong>Keyboard shortcuts:</strong><br>
+      <kbd>l</kbd> = add line •
+      <kbd>c</kbd> = add circle •
+      <kbd>p</kbd> = add polyline •
+      <kbd>t</kbd> = translate last curve •
+      <kbd>r</kbd> = rotate last curve •
+      <kbd>s</kbd> = scale last curve •
+      <kbd>e</kbd> = extrude last curve
+    </p>
+  </div>
+
+  <canvas id="canvas" width="500" height="500"></canvas>
+
+  <div id="buttons">
+    <button id="downloadButton" disabled>Download .3dm</button>
+  </div>
+
+  <!-- Polyfill for import maps (older browsers) -->
+  <script async src="https://unpkg.com/es-module-shims@1.8.2/dist/es-module-shims.js"></script>
+
+  <!-- Import map for rhino3dm -->
+  <script type="importmap">
+  {
+    "imports": {
+      "rhino3dm": "https://unpkg.com/rhino3dm@8.4.0/rhino3dm.module.min.js"
+    }
+  }
+  </script>
+
+  <!-- Main app logic -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
