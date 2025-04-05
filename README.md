@@ -1,8 +1,6 @@
 # 2D NURBS Sketcher App
 
-**Edited by:** Abhishek Shinde  
-
-**Original Author:** Andy Payne @ Robert McNeel and Associates
+**Author:** Abhishek Shinde  
 
 **Date Created:** 03-04-2025
 
