@@ -1,9 +1,13 @@
 # 2D NURBS Sketcher App
 
 **Edited by:** Abhishek Shinde  
+
 **Original Author:** Andy Payne @ Robert McNeel and Associates
+
 **Date Created:** 03-04-2025
+
 **License:** Apache License  
+
 **Copyright:** exDAS | Robert McNeel & Associates  
 
 ---
