@@ -26,7 +26,7 @@ The **2D NURBS Sketcher App** is a static web application built entirely with HT
 
 ---
 
-## **Usage**
+## **Usage(Local Deployment)**
 
 To run the application locally, follow these steps:
 
